@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>himedia</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        li{list-style: none;}
+        .clearfix::after{content:"";display: block;clear: both;}
+        a:link,a:visited{text-decoration: none;color:#333}
+        img{display: block;}
+
+        .headerTopWrap{border-bottom: 1px solid #dcdcdc;margin-bottom: 16px;min-width: 980px;}
+        .headerTop{width: 980px;margin: 0 auto;}
+        .topmenu ul{float: right;}
+        .topmenu li{float: left;position:relative}
+        .topmenu a:after{content: "";display: block;width: 1px;height: 11px;background: #dcdcdc;
+                            position: absolute;top:7px;right:0;}
+        .topmenu li:last-child:after{display: none;}
+        .topmenu li a{display: block;padding: 7px 10px;font-size:12px;line-height: 12px;}
+
+        #headerWrap h1{margin: 0 auto;width: 160px;margin-bottom: 16px;}
+        #headerWrap h1 a{color:#333}
+        #headerWrap .toggle{
+            width: 48px;height: 48px;
+            border: 1px solid #CDCDCD;
+            position: absolute;
+            left:calc( 50% + 980px / 2 - 48px );top:38px;
+            cursor:pointer}
+
+        .toggle div{width: 20px;height: 2px;background-color: #666;
+                    position: absolute;left:calc( 50% - 10px );top:calc( 50% - 1px)}
+        .toggle div:first-child{top:calc( 50% - 9px)}    
+        .toggle div:last-child{top:calc( 50% + 7px)}    
+
+        .mainmenuWrap{background-color: #1D5DA4;}
+        .mainmenuWrap .mainmenu{width: 980px;}
+        .mainmenuWrap .mainmenu ul
+        .mainmenuWrap .mainmenu li
+        .mainmenuWrap .mainmenu li a
+        .mainmenuWrap .mainmenu li a
+
+
+    </style>
+</head>
+<body>
+    <header id="headerWrap">
+        <div class="headerTopWrap">
+            <div class="headerTop">
+                <div class="topmenu clearfix">
+                    <ul class="clearfix">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1><a href="#">하이미디어</a></h1>
+        <div class="toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+        <div class="mainmenuWrap">
+            <nav class="mainmenu">
+                <ul class="clearfix">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">사업영역</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">인재채용</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
